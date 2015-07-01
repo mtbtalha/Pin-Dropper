@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3647679A31E56640EF9560E3 /* Pods-Pin Dropper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E580E88BBC00002EE169CA58 /* Pods-Pin Dropper-dummy.m */; };
+		407B96BCB7093404CEC8169F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A21ADA9684C919AC8975DF /* Foundation.framework */; };
+		A52C6E3A8907D80D3B8937D3 /* Pods-Pin Dropper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56DE140B10661EA309E97700 /* Pods-Pin Dropper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A292F1B427EBDFE3C06DEBC /* Pods-Pin Dropper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pin Dropper.debug.xcconfig"; sourceTree = "<group>"; };
+		13A21ADA9684C919AC8975DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2823CBCFE9B6865856150DF4 /* Pods-Pin Dropper-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pin Dropper-environment.h"; sourceTree = "<group>"; };
+		37BE210C9115D8707A0F95A4 /* Pods-Pin Dropper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pin Dropper.release.xcconfig"; sourceTree = "<group>"; };
+		56DE140B10661EA309E97700 /* Pods-Pin Dropper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pin Dropper-umbrella.h"; sourceTree = "<group>"; };
+		78D3E2064B5AC04C6B61A8FD /* Pods-Pin Dropper-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pin Dropper-resources.sh"; sourceTree = "<group>"; };
+		7FF149C0A14195B2F001B262 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97C1CC27A7ADAF116361D066 /* Pods-Pin Dropper-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pin Dropper-frameworks.sh"; sourceTree = "<group>"; };
+		ABC66BF13D28B991FAC73C60 /* Pods-Pin Dropper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pin Dropper.modulemap"; sourceTree = "<group>"; };
+		C51F9C27F7E913AB14E100DA /* Pods_Pin_Dropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pin_Dropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8459B0C963C26AE137AC25E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		DE8A839C3C7384BB36DC844A /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		E580E88BBC00002EE169CA58 /* Pods-Pin Dropper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pin Dropper-dummy.m"; sourceTree = "<group>"; };
+		E8C17E0429C7C17AFAB9E1E9 /* Pods-Pin Dropper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pin Dropper-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F83FB11EC8ACD66D21D6FA6E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC6EADC422B3B008E132CF3 /* Pods-Pin Dropper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pin Dropper-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD433F6B73E09028E04CA74C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407B96BCB7093404CEC8169F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25E9E940A815F62F43CD5669 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8459B0C963C26AE137AC25E /* GoogleMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CA201BF2B1409B24772D5A4 /* Pods-Pin Dropper */ = {
+			isa = PBXGroup;
+			children = (
+				F83FB11EC8ACD66D21D6FA6E /* Info.plist */,
+				ABC66BF13D28B991FAC73C60 /* Pods-Pin Dropper.modulemap */,
+				E8C17E0429C7C17AFAB9E1E9 /* Pods-Pin Dropper-acknowledgements.markdown */,
+				FAC6EADC422B3B008E132CF3 /* Pods-Pin Dropper-acknowledgements.plist */,
+				E580E88BBC00002EE169CA58 /* Pods-Pin Dropper-dummy.m */,
+				2823CBCFE9B6865856150DF4 /* Pods-Pin Dropper-environment.h */,
+				97C1CC27A7ADAF116361D066 /* Pods-Pin Dropper-frameworks.sh */,
+				78D3E2064B5AC04C6B61A8FD /* Pods-Pin Dropper-resources.sh */,
+				56DE140B10661EA309E97700 /* Pods-Pin Dropper-umbrella.h */,
+				0A292F1B427EBDFE3C06DEBC /* Pods-Pin Dropper.debug.xcconfig */,
+				37BE210C9115D8707A0F95A4 /* Pods-Pin Dropper.release.xcconfig */,
+			);
+			name = "Pods-Pin Dropper";
+			path = "Target Support Files/Pods-Pin Dropper";
+			sourceTree = "<group>";
+		};
+		4E6A33C17AF99EBC836D374E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A839C3C7384BB36DC844A /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6868A63B0AB6278ECEA6480C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				13A21ADA9684C919AC8975DF /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		98D201A5BE2F66544F9DEEC0 = {
+			isa = PBXGroup;
+			children = (
+				7FF149C0A14195B2F001B262 /* Podfile */,
+				C1E213B260E82DE5CBE6B8C2 /* Frameworks */,
+				AB209CDC2359BE2B88774ACD /* Pods */,
+				D6A64A20628FF5326DBC5041 /* Products */,
+				D93BB674FA1A841E54188DAC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9B0C805C160363A550371455 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				25E9E940A815F62F43CD5669 /* Frameworks */,
+				4E6A33C17AF99EBC836D374E /* Resources */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		AB209CDC2359BE2B88774ACD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B0C805C160363A550371455 /* GoogleMaps */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1E213B260E82DE5CBE6B8C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6868A63B0AB6278ECEA6480C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6A64A20628FF5326DBC5041 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C51F9C27F7E913AB14E100DA /* Pods_Pin_Dropper.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D93BB674FA1A841E54188DAC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CA201BF2B1409B24772D5A4 /* Pods-Pin Dropper */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5235253DFF97D7B22BEF0D99 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52C6E3A8907D80D3B8937D3 /* Pods-Pin Dropper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F3C3B0F421281D53964C0048 /* Pods-Pin Dropper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9995BADFFED4E395653E228A /* Build configuration list for PBXNativeTarget "Pods-Pin Dropper" */;
+			buildPhases = (
+				E1191672087E31F7D42B3A54 /* Sources */,
+				FD433F6B73E09028E04CA74C /* Frameworks */,
+				5235253DFF97D7B22BEF0D99 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Pin Dropper";
+			productName = "Pods-Pin Dropper";
+			productReference = C51F9C27F7E913AB14E100DA /* Pods_Pin_Dropper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48CC6166CCF5D9CAA757E7A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 361543C70A5B0FD26B8C22D3 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 98D201A5BE2F66544F9DEEC0;
+			productRefGroup = D6A64A20628FF5326DBC5041 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3C3B0F421281D53964C0048 /* Pods-Pin Dropper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1191672087E31F7D42B3A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3647679A31E56640EF9560E3 /* Pods-Pin Dropper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F49116281E9329FEB4607F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A292F1B427EBDFE3C06DEBC /* Pods-Pin Dropper.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pin Dropper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Pin Dropper/Pods-Pin Dropper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Pin_Dropper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		734F94D1FB4D362C8EC4273B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		81882581B51BF64FDDA77839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3D965FA3A7B114B98C52F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37BE210C9115D8707A0F95A4 /* Pods-Pin Dropper.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pin Dropper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Pin Dropper/Pods-Pin Dropper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Pin_Dropper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		361543C70A5B0FD26B8C22D3 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				734F94D1FB4D362C8EC4273B /* Debug */,
+				81882581B51BF64FDDA77839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9995BADFFED4E395653E228A /* Build configuration list for PBXNativeTarget "Pods-Pin Dropper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F49116281E9329FEB4607F1 /* Debug */,
+				F3D965FA3A7B114B98C52F47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48CC6166CCF5D9CAA757E7A1 /* Project object */;
+}

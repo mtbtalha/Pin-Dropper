@@ -1,0 +1,6 @@
+framework module Pods_Pin_Dropper {
+  umbrella header "Pods-Pin Dropper-umbrella.h"
+
+  export *
+  module * { export * }
+}
