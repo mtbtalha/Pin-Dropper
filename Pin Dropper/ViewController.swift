@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController, GMSMapViewDelegate {
 
+    var longitude : Double = 0.0
+    var latitude : Double = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +37,8 @@ class ViewController: UIViewController, GMSMapViewDelegate {
 
     
     func mapView(mapView: GMSMapView!, didTapAtCoordinate coordinate: CLLocationCoordinate2D) {
+        self.longitude = coordinate.longitude
+        self.latitude = coordinate.latitude
         
     }
     
