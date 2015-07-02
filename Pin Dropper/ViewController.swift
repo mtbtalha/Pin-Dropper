@@ -40,6 +40,9 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         self.longitude = coordinate.longitude
         self.latitude = coordinate.latitude
         
+        var newMarker = GMSMarker()
+        newMarker.position = CLLocationCoordinate2DMake(self.latitude, self.longitude)
+        newMarker.map = mapView
     }
     
 }
