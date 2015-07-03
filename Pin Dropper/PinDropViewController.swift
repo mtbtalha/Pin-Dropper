@@ -10,14 +10,15 @@ import UIKit
 
 class PinDropViewController: UIViewController, GMSMapViewDelegate {
 
-    let segueIdentifier = "ToPinsList"
+    let PinsListSegueIdentifier = "ToPinsList"
+    var count = 1
     var pins : [Pin] = []
     
     @IBOutlet weak var mapUIView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        gMapsInitialization()
+        initializeMapView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,11 +28,9 @@ class PinDropViewController: UIViewController, GMSMapViewDelegate {
     
    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if (segue.identifier == segueIdentifier) {
+        if (segue.identifier == PinsListSegueIdentifier) {
             let svc = segue.destinationViewController as! PinsListViewController;
-            
             svc.pinsArray = pins
-            
         }
     }
 
@@ -50,10 +49,11 @@ class PinDropViewController: UIViewController, GMSMapViewDelegate {
             }
             
             if placemarks.count > 0 {
-                if  let pm = placemarks[0] as? CLPlacemark {
-                address = pm.name
-                let newPin = Pin(latitude: coordinate.latitude, longitude: coordinate.longitude, address: address!)
-                self.pins.append(newPin)
+                if  let placemark = placemarks[0] as? CLPlacemark {
+                    address = placemark.name
+                    let newPin = Pin(pinNumber: self.count, latitude: coordinate.latitude, longitude:coordinate.longitude, address: address!)
+                    self.count++
+                    self.pins.append(newPin)
                 }
             }
             else {
@@ -65,7 +65,7 @@ class PinDropViewController: UIViewController, GMSMapViewDelegate {
         newMarker.map = mapView
     }
     
-    func gMapsInitialization(){
+    func initializeMapView(){
         let sydneyAustraliaLatitude = -33.883633
         let sydneyAustraliaLongitude = 151.193927
         let camera = GMSCameraPosition.cameraWithLatitude(sydneyAustraliaLatitude,

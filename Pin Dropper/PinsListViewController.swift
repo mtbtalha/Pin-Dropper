@@ -32,7 +32,6 @@ class PinsListViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
      
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.cellIdentifier, forIndexPath: indexPath) as! CustomCell
-            cell.pinNumberLabel.text = "\(indexPath.row)."
             cell.usePin(pinsArray[indexPath.row])
             return cell
             
