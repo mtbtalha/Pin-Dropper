@@ -8,7 +8,7 @@
         <!--Pin Dropper-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pin_Dropper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PinDropViewController" customModule="Pin_Dropper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IsW-bB-Wpz"/>
                         <viewControllerLayoutGuide type="bottom" id="NPh-if-OkW"/>

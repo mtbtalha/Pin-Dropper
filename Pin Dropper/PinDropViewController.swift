@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PinDropViewController.swift
 //  Pin Dropper
 //
 //  Created by Talha Babar on 7/1/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, GMSMapViewDelegate {
+class PinDropViewController: UIViewController, GMSMapViewDelegate {
 
     var pins : [Pin] = []
     
@@ -16,14 +16,7 @@ class ViewController: UIViewController, GMSMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var camera = GMSCameraPosition.cameraWithLatitude(-33.883633,
-            longitude: 151.193927, zoom: 14)
-        var mapView = GMSMapView.mapWithFrame(CGRectMake(0, 0, self.mapUIView.frame.size.width, self.mapUIView.frame.size.height), camera: camera)
-        mapView.myLocationEnabled = true
-        self.mapUIView.addSubview(mapView)
-        self.view.addSubview(mapUIView)
-        mapView.delegate = self
+        gMapsInitialization()
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +29,7 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         if (segue.identifier == "ToPinsList") {
             var svc = segue.destinationViewController as! PinsListViewController;
             
-            svc.passed = pins
+            svc.pinsArray = pins
             
         }
     }
@@ -44,9 +37,9 @@ class ViewController: UIViewController, GMSMapViewDelegate {
     
     func mapView(mapView: GMSMapView!, didTapAtCoordinate coordinate: CLLocationCoordinate2D) {
         var address : String?
-        var long : CLLocationDegrees = coordinate.longitude
-        var lat : CLLocationDegrees = coordinate.latitude
-        var location = CLLocation(latitude: lat, longitude: long) //changed!!!
+        let long : CLLocationDegrees = coordinate.longitude
+        let lat : CLLocationDegrees = coordinate.latitude
+        let location = CLLocation(latitude: lat, longitude: long) //changed!!!
 
         //var placemark :AnyObject
         CLGeocoder().reverseGeocodeLocation(location, completionHandler: {(placemarks, error) -> Void in
@@ -70,11 +63,18 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         var newMarker = GMSMarker()
         newMarker.position = CLLocationCoordinate2DMake(coordinate.latitude, coordinate.longitude)
         newMarker.map = mapView
-        
-        
-        
-        
-        
+    }
+    
+    func gMapsInitialization(){
+        let sydneyAustraliaLatitude = -33.883633
+        let sydneyAustraliaLongitude = 151.193927
+        let camera = GMSCameraPosition.cameraWithLatitude(sydneyAustraliaLatitude,
+            longitude: sydneyAustraliaLongitude, zoom: 14)
+        let mapView = GMSMapView.mapWithFrame(CGRectMake(0, 0, self.mapUIView.frame.size.width, self.mapUIView.frame.size.height), camera: camera)
+        mapView.myLocationEnabled = true
+        self.mapUIView.addSubview(mapView)
+        self.view.addSubview(mapUIView)
+        mapView.delegate = self
     }
     
 }

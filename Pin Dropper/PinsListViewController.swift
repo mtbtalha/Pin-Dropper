@@ -9,8 +9,7 @@
 
 class PinsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var passed : [Pin]!
-    var cellIdentifier = CustomCell.cellIdentifier
+    var pinsArray : [Pin]!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -28,18 +27,18 @@ class PinsListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        println(passed.count)
-        return passed.count
+        println(pinsArray.count)
+        return pinsArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
      
-            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! CustomCell
+            let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.cellIdentifier, forIndexPath: indexPath) as! CustomCell
             cell.pinNumberLabel.text = "\(indexPath.row)."
-            cell.addressLabel.text = "Address: \(passed[indexPath.row].address)"
+            cell.addressLabel.text = "Address: \(pinsArray[indexPath.row].address)"
             cell.addressLabel.font.fontWithSize(12.0)
-            cell.latitudeLabel.text = "Latitude: \(passed[indexPath.row].latitude)"
-            cell.longitudeLabel.text = "Longitude: \(passed[indexPath.row].longitude)"
+            cell.latitudeLabel.text = "Latitude: \(pinsArray[indexPath.row].latitude)"
+            cell.longitudeLabel.text = "Longitude: \(pinsArray[indexPath.row].longitude)"
             return cell
             
         }

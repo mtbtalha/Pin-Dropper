@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        GMSServices.provideAPIKey("AIzaSyAR8CbZ3McRXYKJbxxMo06_CPSpbX7BFfM")
+        registerGoogleMaps()
         // Override point for customization after application launch.
         return true
     }
@@ -45,7 +45,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidFinishLaunching(application: UIApplication) {
         
-    }    
+    }
+    
+    func registerGoogleMaps() {
+        GMSServices.provideAPIKey("AIzaSyAR8CbZ3McRXYKJbxxMo06_CPSpbX7BFfM")
+    }
 
 }
 
