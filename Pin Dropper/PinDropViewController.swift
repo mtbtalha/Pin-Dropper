@@ -8,10 +8,11 @@
 
 import UIKit
 
-class PinDropViewController: UIViewController, GMSMapViewDelegate {
+private let PinsListSegueIdentifier = "ToPinsList"
+private let TextSize : CGFloat = 15.0
 
-    let PinsListSegueIdentifier = "ToPinsList"
-    var count = 1
+class PinDropViewController: UIViewController, GMSMapViewDelegate {
+    
     var pins : [Pin] = []
     
     @IBOutlet weak var mapUIView: UIView!
@@ -51,9 +52,8 @@ class PinDropViewController: UIViewController, GMSMapViewDelegate {
             if placemarks.count > 0 {
                 if  let placemark = placemarks[0] as? CLPlacemark {
                     address = placemark.name
-                    let newPin = Pin(pinNumber: self.count, latitude: coordinate.latitude, longitude:coordinate.longitude, address: address!)
-                    self.count++
-                    self.pins.append(newPin)
+                    let newPin = Pin(latitude: coordinate.latitude, longitude:coordinate.longitude, address: address!)
+                        self.pins.append(newPin)
                 }
             }
             else {

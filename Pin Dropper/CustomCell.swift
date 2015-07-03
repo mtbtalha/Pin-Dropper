@@ -17,8 +17,8 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var latitudeLabel: UILabel!
     @IBOutlet weak var longitudeLabel: UILabel!
     
-    func usePin (pin : Pin) {
-        pinNumberLabel.text = "\(pin.pinNumber)."
+    func usePin (pin : Pin, index: Int) {
+        pinNumberLabel.text = "\(index)."
         addressLabel.text = "Address: \(pin.address)"
         latitudeLabel.text = "Latitude: \(pin.latitude)"
         longitudeLabel.text = "Longitude: \(pin.longitude)"

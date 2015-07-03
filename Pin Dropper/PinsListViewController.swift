@@ -32,7 +32,7 @@ class PinsListViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
      
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.cellIdentifier, forIndexPath: indexPath) as! CustomCell
-            cell.usePin(pinsArray[indexPath.row])
+        cell.usePin(pinsArray[indexPath.row],index: indexPath.row + 1)
             return cell
             
         }
