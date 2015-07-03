@@ -26,8 +26,6 @@ class PinsListViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        println(pinsArray.count)
         return pinsArray.count
     }
     
@@ -35,10 +33,7 @@ class PinsListViewController: UIViewController, UITableViewDataSource, UITableVi
      
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.cellIdentifier, forIndexPath: indexPath) as! CustomCell
             cell.pinNumberLabel.text = "\(indexPath.row)."
-            cell.addressLabel.text = "Address: \(pinsArray[indexPath.row].address)"
-            cell.addressLabel.font.fontWithSize(12.0)
-            cell.latitudeLabel.text = "Latitude: \(pinsArray[indexPath.row].latitude)"
-            cell.longitudeLabel.text = "Longitude: \(pinsArray[indexPath.row].longitude)"
+            cell.usePin(pinsArray[indexPath.row])
             return cell
             
         }

@@ -10,6 +10,7 @@ import UIKit
 
 class PinDropViewController: UIViewController, GMSMapViewDelegate {
 
+    let segueIdentifier = "ToPinsList"
     var pins : [Pin] = []
     
     @IBOutlet weak var mapUIView: UIView!
@@ -26,8 +27,8 @@ class PinDropViewController: UIViewController, GMSMapViewDelegate {
     
    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if (segue.identifier == "ToPinsList") {
-            var svc = segue.destinationViewController as! PinsListViewController;
+        if (segue.identifier == segueIdentifier) {
+            let svc = segue.destinationViewController as! PinsListViewController;
             
             svc.pinsArray = pins
             
@@ -37,9 +38,9 @@ class PinDropViewController: UIViewController, GMSMapViewDelegate {
     
     func mapView(mapView: GMSMapView!, didTapAtCoordinate coordinate: CLLocationCoordinate2D) {
         var address : String?
-        let long : CLLocationDegrees = coordinate.longitude
-        let lat : CLLocationDegrees = coordinate.latitude
-        let location = CLLocation(latitude: lat, longitude: long) //changed!!!
+        let tapedAtlongitude = coordinate.longitude
+        let tapedAtlattitude = coordinate.latitude
+        let location = CLLocation(latitude: tapedAtlattitude, longitude: tapedAtlongitude) //changed!!!
 
         //var placemark :AnyObject
         CLGeocoder().reverseGeocodeLocation(location, completionHandler: {(placemarks, error) -> Void in
@@ -49,18 +50,17 @@ class PinDropViewController: UIViewController, GMSMapViewDelegate {
             }
             
             if placemarks.count > 0 {
-                let pm = placemarks[0] as! CLPlacemark
+                if  let pm = placemarks[0] as? CLPlacemark {
                 address = pm.name
-                println(pm.name)
-                var newPin = Pin(latitude: coordinate.latitude, longitude: coordinate.longitude, address: address!)
+                let newPin = Pin(latitude: coordinate.latitude, longitude: coordinate.longitude, address: address!)
                 self.pins.append(newPin)
-                println(self.pins.count)
+                }
             }
             else {
                 println("Problem with the data received from geocoder")
             }
         })
-        var newMarker = GMSMarker()
+        let newMarker = GMSMarker()
         newMarker.position = CLLocationCoordinate2DMake(coordinate.latitude, coordinate.longitude)
         newMarker.map = mapView
     }

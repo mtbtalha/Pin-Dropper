@@ -17,15 +17,10 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var latitudeLabel: UILabel!
     @IBOutlet weak var longitudeLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func usePin (pin : Pin) {
+        addressLabel.text = "Address: \(pin.address)"
+        latitudeLabel.text = "Latitude: \(pin.latitude)"
+        longitudeLabel.text = "Longitude: \(pin.longitude)"
     }
-    
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
-    
+ 
 }
