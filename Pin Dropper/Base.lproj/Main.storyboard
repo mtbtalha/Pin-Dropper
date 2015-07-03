@@ -79,37 +79,46 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hyw-R1-zjC" id="lIt-06-iqi">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJH-rH-kre">
-                                                    <rect key="frame" x="8" y="29" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0t-zN-OVY">
-                                                    <rect key="frame" x="279" y="8" width="42" height="21"/>
+                                                    <rect key="frame" x="8" y="0.0" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSa-Ar-var">
-                                                    <rect key="frame" x="8" y="58" width="42" height="21"/>
+                                                    <rect key="frame" x="96" y="29" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRa-7R-3eE">
+                                                    <rect key="frame" x="96" y="58" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJH-rH-kre">
+                                                    <rect key="frame" x="96" y="0.0" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="SSa-Ar-var" firstAttribute="leading" secondItem="lIt-06-iqi" secondAttribute="leadingMargin" id="39z-cl-BgP"/>
-                                                <constraint firstItem="mJH-rH-kre" firstAttribute="top" secondItem="lIt-06-iqi" secondAttribute="topMargin" constant="21" id="ESQ-WT-WTS"/>
-                                                <constraint firstItem="mJH-rH-kre" firstAttribute="leading" secondItem="lIt-06-iqi" secondAttribute="leadingMargin" id="GtY-aL-fWy"/>
-                                                <constraint firstItem="N0t-zN-OVY" firstAttribute="top" secondItem="lIt-06-iqi" secondAttribute="topMargin" id="Jvh-Xs-nsZ"/>
-                                                <constraint firstItem="N0t-zN-OVY" firstAttribute="leading" secondItem="lIt-06-iqi" secondAttribute="leadingMargin" constant="271" id="h4b-4c-KTQ"/>
-                                                <constraint firstItem="SSa-Ar-var" firstAttribute="top" secondItem="mJH-rH-kre" secondAttribute="bottom" constant="8" id="thl-vK-wOR"/>
+                                                <constraint firstItem="N0t-zN-OVY" firstAttribute="baseline" secondItem="mJH-rH-kre" secondAttribute="baseline" id="CBt-5U-3WR"/>
+                                                <constraint firstItem="SSa-Ar-var" firstAttribute="top" secondItem="mJH-rH-kre" secondAttribute="bottom" constant="8" symbolic="YES" id="DL6-dW-dZF"/>
+                                                <constraint firstItem="N0t-zN-OVY" firstAttribute="leading" secondItem="lIt-06-iqi" secondAttribute="leadingMargin" id="SoZ-dt-lpB"/>
+                                                <constraint firstItem="SSa-Ar-var" firstAttribute="leading" secondItem="mJH-rH-kre" secondAttribute="leading" id="TxJ-nZ-Bcz"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="N0t-zN-OVY" secondAttribute="bottom" constant="80" id="UnR-9g-7Xp"/>
+                                                <constraint firstItem="SSa-Ar-var" firstAttribute="leading" secondItem="hRa-7R-3eE" secondAttribute="leading" id="msi-zx-bDI"/>
+                                                <constraint firstItem="mJH-rH-kre" firstAttribute="leading" secondItem="N0t-zN-OVY" secondAttribute="trailing" constant="46" id="sKD-7p-JX2"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hRa-7R-3eE" secondAttribute="bottom" constant="22" id="x9y-wp-wK1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="addressLabel" destination="mJH-rH-kre" id="6WA-5v-D00"/>
-                                            <outlet property="coordinatesLabel" destination="SSa-Ar-var" id="uXy-4F-P9j"/>
+                                            <outlet property="latitudeLabel" destination="SSa-Ar-var" id="gSJ-NO-1hm"/>
+                                            <outlet property="longitudeLabel" destination="hRa-7R-3eE" id="rHW-EK-naf"/>
                                             <outlet property="pinNumberLabel" destination="N0t-zN-OVY" id="ExC-5g-IQv"/>
                                         </connections>
                                     </tableViewCell>

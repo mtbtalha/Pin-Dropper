@@ -14,8 +14,9 @@ class CustomCell: UITableViewCell {
     
     @IBOutlet weak var pinNumberLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
-    @IBOutlet weak var coordinatesLabel: UILabel!
-
+    @IBOutlet weak var latitudeLabel: UILabel!
+    @IBOutlet weak var longitudeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

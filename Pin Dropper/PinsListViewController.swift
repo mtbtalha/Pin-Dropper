@@ -35,10 +35,11 @@ class PinsListViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
      
             let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! CustomCell
-            cell.pinNumberLabel.text = "\(indexPath.row)"
+            cell.pinNumberLabel.text = "\(indexPath.row)."
             cell.addressLabel.text = "Address: \(passed[indexPath.row].address)"
-            cell.coordinatesLabel.text = "Latitude: \(passed[indexPath.row].latitude) Longitude: \(passed[indexPath.row].longitude)"
-            cell.coordinatesLabel.font.fontWithSize(7.0)
+            cell.addressLabel.font.fontWithSize(12.0)
+            cell.latitudeLabel.text = "Latitude: \(passed[indexPath.row].latitude)"
+            cell.longitudeLabel.text = "Longitude: \(passed[indexPath.row].longitude)"
             return cell
             
         }
